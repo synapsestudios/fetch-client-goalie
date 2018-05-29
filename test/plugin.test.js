@@ -1,4 +1,4 @@
-const createPlugin = require('./plugin');
+const createPlugin = require('../src/plugin');
 
 describe('smoke tests', () => {
   test('it initializes without errors', () => {
