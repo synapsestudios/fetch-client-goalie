@@ -1,5 +1,5 @@
 {
-  "name": "fetch-client-goalie",
+  "name": "@synapsestudios/fetch-client-goalie",
   "version": "0.0.1",
   "description": "Fetch client plugin and redux bindings for dealing with goalie 412 responses",
   "main": "index.js",
