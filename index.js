@@ -1,3 +1,4 @@
-exports = {
-  plugin: require('./src/plugin'),
+module.exports = {
+  createPlugin: require('./src/plugin'),
+  shouldUpdateReducer: require('./src/reducer'),
 }
