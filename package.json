@@ -1,0 +1,25 @@
+{
+  "name": "fetch-client-goalie",
+  "version": "1.0.0",
+  "description": "Fetch client plugin and redux bindings for dealing with goalie 412 responses",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synapsestudios/fetch-client-goalie.git"
+  },
+  "author": "Synapse Studios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/synapsestudios/fetch-client-goalie/issues"
+  },
+  "homepage": "https://github.com/synapsestudios/fetch-client-goalie#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-jest": "^21.17.0",
+    "jest": "^23.0.1"
+  }
+}
