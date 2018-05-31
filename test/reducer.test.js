@@ -1,4 +1,4 @@
-const reducer = require('./reducer');
+const reducer = require('../src/reducer');
 
 test('should return first arg when action type does not match', () => {
   const shouldUpdate = reducer(false, {type: 'INIT'});

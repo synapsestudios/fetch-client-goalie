@@ -1,4 +1,4 @@
-const index = require('./index');
+const index = require('../src/index');
 test('createPlugin is a function', () => {
   expect(typeof index.createPlugin).toBe('function');
 });
