@@ -25,7 +25,7 @@ describe('request header', () => {
     expect(MockRequest.headers.set.mock.calls.length).toBe(1)
     expect(MockRequest.headers.set.mock.calls[0][0]).toBe('api-version')
     expect(MockRequest.headers.set.mock.calls[0][1]).toBe('v1.0.0')
-  })
+  });
 });
 
 describe('response action', () => {
