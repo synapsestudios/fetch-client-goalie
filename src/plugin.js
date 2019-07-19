@@ -3,7 +3,7 @@ module.exports = (version, store) => {
   if (!store) throw new Error('fetch-client-goalie: store must be provided');
   return {
     onStart: request => {
-      request.headers.append('api-version', version);
+      request.headers.set('api-version', version);
       return request;
     },
     onFail: (request, response) => {

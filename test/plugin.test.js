@@ -17,15 +17,15 @@ describe('smoke tests', () => {
 describe('request header', () => {
   const MockRequest = { headers: {} };
 
-  test('onStart appends api-version header', () => {
+  test('onStart sets api-version header', () => {
     const plugin = createPlugin('v1.0.0', {});
-    MockRequest.headers.append = jest.fn();
+    MockRequest.headers.set = jest.fn();
 
     plugin.onStart(MockRequest);
-    expect(MockRequest.headers.append.mock.calls.length).toBe(1)
-    expect(MockRequest.headers.append.mock.calls[0][0]).toBe('api-version')
-    expect(MockRequest.headers.append.mock.calls[0][1]).toBe('v1.0.0')
-  })
+    expect(MockRequest.headers.set.mock.calls.length).toBe(1)
+    expect(MockRequest.headers.set.mock.calls[0][0]).toBe('api-version')
+    expect(MockRequest.headers.set.mock.calls[0][1]).toBe('v1.0.0')
+  });
 });
 
 describe('response action', () => {
